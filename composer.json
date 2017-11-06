@@ -1,12 +1,9 @@
 {
     "name": "mubat/yii2-sitemap-generator",
-    "description": "Yii2 widget makes possible to generate application sitemap",
+    "description": "Yii2 widget for sitemap generation",
     "type": "yii2-extension",
-    "keywords": [
-        "yii2",
-        "widget",
-        "sitemap"
-    ],
+    "keywords": ["yii2", "widget", "sitemap"],
+    "license": "MIT",
     "authors": [
         {
             "name": "Oleg Sergienko",
@@ -14,13 +11,18 @@
             "role": "Developer"
         }
     ],
-    "license": "MIT",
     "support": {
         "issues": "https://github.com/mubat/yii2-sitemap-generator/issues",
         "source": "https://github.com/mubat/yii2-sitemap-generator/"
     },
     "minimum-stability": "stable",
     "require": {
-        "yiisoft/yii2": "2.0.0"
+        "php": ">=5.4",
+        "yiisoft/yii2": "^2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "sergin\\yii2\\sitemap\\": ""
+        }
     }
 }

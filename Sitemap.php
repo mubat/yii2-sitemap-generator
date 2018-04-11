@@ -11,7 +11,8 @@ use yii\helpers\ArrayHelper;
  * Class Sitemap
  * @package sergin\yii2\sitemap
  *
- * @property SitemapElement[] $elements registered loc elements
+ * @property SitemapElement[] $elements
+ * @property int $elementsCount count of elements that will be generated
  */
 class Sitemap extends Model
 {
@@ -29,6 +30,12 @@ class Sitemap extends Model
         switch ($name) {
             case 'elements':
                 return $this->_mapObjects;
+            case 'elementsCount':
+                if (is_array($this->languages)) {
+                    return count($this->_mapObjects) * count($this->languages);
+                } else {
+                    return count($this->_mapObjects);
+                }
         }
         return parent::__get($name);
     }

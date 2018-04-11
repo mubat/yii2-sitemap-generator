@@ -15,7 +15,7 @@ Either run ```php composer require mubat/yii2-sitemap-generator```
 
 or add ```"mubat/yii2-sitemap-generator" : "~1.0"``` to the require section of your ```composer.json```
 
-
+___
 
 Widget contains 2 models:
 1. **Sitemap** - base model. It contains *SitemapElement* array and methods to generate XML.
